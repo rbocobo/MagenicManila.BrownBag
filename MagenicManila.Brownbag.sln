@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.BusinessObjects", "MagenicManila.Brownbag.BusinessObjects\MagenicManila.Brownbag.BusinessObjects.csproj", "{4B62C49F-283F-41A6-9116-F9FE732C77B7}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MagenicManila.Brownbag.Database", "MagenicManila.Brownbag.Database\MagenicManila.Brownbag.Database.sqlproj", "{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.BusinessObjects.Tests", "MagenicManila.Brownbag.BusinessObjects.Tests\MagenicManila.Brownbag.BusinessObjects.Tests.csproj", "{BEE12701-1307-45F3-84FA-42D6F86C825C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.Data", "MagenicManila.Brownbag.Data\MagenicManila.Brownbag.Data.csproj", "{EE275E4A-CDAC-408D-8682-53F19DAA73FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.Core", "MagenicManila.Brownbag.Core\MagenicManila.Brownbag.Core.csproj", "{7F83E40B-94FF-4D85-B19A-80B06996CA9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.UI.Web", "MagenicManila.Brownbag.UI.Web\MagenicManila.Brownbag.UI.Web.csproj", "{2123E3C5-C8CF-4C5B-AB57-54F2A0000D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.Core.Testing", "MagenicManila.Brownbag.Core.Testing\MagenicManila.Brownbag.Core.Testing.csproj", "{3570033E-D451-417F-99AA-B8BEA9A54496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.UI.Web.Tests", "MagenicManila.Brownbag.UI.Web.Tests\MagenicManila.Brownbag.UI.Web.Tests.csproj", "{74FD4382-C968-44C1-A305-E9A2349A4A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagenicManila.Brownbag.UI.RemoteDataPortal", "MagenicManila.Brownbag.UI.RemoteDataPortal\MagenicManila.Brownbag.UI.RemoteDataPortal.csproj", "{99658727-2A4D-4278-A774-EFDFF8137E9D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ohbaron.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MagenicManila.Brownbag.BusinessObjects.Tests\\MagenicManila.Brownbag.BusinessObjects.Tests.csproj
+		SccProjectName1 = MagenicManila.Brownbag.BusinessObjects.Tests
+		SccLocalPath1 = MagenicManila.Brownbag.BusinessObjects.Tests
+		SccProjectUniqueName2 = MagenicManila.Brownbag.BusinessObjects\\MagenicManila.Brownbag.BusinessObjects.csproj
+		SccProjectName2 = MagenicManila.Brownbag.BusinessObjects
+		SccLocalPath2 = MagenicManila.Brownbag.BusinessObjects
+		SccProjectUniqueName3 = MagenicManila.Brownbag.Core\\MagenicManila.Brownbag.Core.csproj
+		SccProjectName3 = MagenicManila.Brownbag.Core
+		SccLocalPath3 = MagenicManila.Brownbag.Core
+		SccProjectUniqueName4 = MagenicManila.Brownbag.Data\\MagenicManila.Brownbag.Data.csproj
+		SccProjectName4 = MagenicManila.Brownbag.Data
+		SccLocalPath4 = MagenicManila.Brownbag.Data
+		SccProjectUniqueName5 = MagenicManila.Brownbag.Database\\MagenicManila.Brownbag.Database.sqlproj
+		SccProjectName5 = MagenicManila.Brownbag.Database
+		SccLocalPath5 = MagenicManila.Brownbag.Database
+		SccProjectUniqueName6 = MagenicManila.Brownbag.UI.Web\\MagenicManila.Brownbag.UI.Web.csproj
+		SccProjectName6 = MagenicManila.Brownbag.UI.Web
+		SccLocalPath6 = MagenicManila.Brownbag.UI.Web
+		SccProjectUniqueName7 = MagenicManila.Brownbag.Core.Testing\\MagenicManila.Brownbag.Core.Testing.csproj
+		SccProjectName7 = MagenicManila.Brownbag.Core.Testing
+		SccLocalPath7 = MagenicManila.Brownbag.Core.Testing
+		SccProjectUniqueName8 = MagenicManila.Brownbag.UI.Web.Tests\\MagenicManila.Brownbag.UI.Web.Tests.csproj
+		SccProjectName8 = MagenicManila.Brownbag.UI.Web.Tests
+		SccLocalPath8 = MagenicManila.Brownbag.UI.Web.Tests
+		SccProjectUniqueName9 = MagenicManila.Brownbag.UI.RemoteDataPortal\\MagenicManila.Brownbag.UI.RemoteDataPortal.csproj
+		SccProjectName9 = MagenicManila.Brownbag.UI.RemoteDataPortal
+		SccLocalPath9 = MagenicManila.Brownbag.UI.RemoteDataPortal
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B62C49F-283F-41A6-9116-F9FE732C77B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B62C49F-283F-41A6-9116-F9FE732C77B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B62C49F-283F-41A6-9116-F9FE732C77B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B62C49F-283F-41A6-9116-F9FE732C77B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007BD3A3-F5D8-4309-8D6F-B0A8784F96BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BEE12701-1307-45F3-84FA-42D6F86C825C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE12701-1307-45F3-84FA-42D6F86C825C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE12701-1307-45F3-84FA-42D6F86C825C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE12701-1307-45F3-84FA-42D6F86C825C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE275E4A-CDAC-408D-8682-53F19DAA73FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE275E4A-CDAC-408D-8682-53F19DAA73FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE275E4A-CDAC-408D-8682-53F19DAA73FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE275E4A-CDAC-408D-8682-53F19DAA73FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F83E40B-94FF-4D85-B19A-80B06996CA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F83E40B-94FF-4D85-B19A-80B06996CA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F83E40B-94FF-4D85-B19A-80B06996CA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F83E40B-94FF-4D85-B19A-80B06996CA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2123E3C5-C8CF-4C5B-AB57-54F2A0000D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2123E3C5-C8CF-4C5B-AB57-54F2A0000D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2123E3C5-C8CF-4C5B-AB57-54F2A0000D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2123E3C5-C8CF-4C5B-AB57-54F2A0000D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3570033E-D451-417F-99AA-B8BEA9A54496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3570033E-D451-417F-99AA-B8BEA9A54496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3570033E-D451-417F-99AA-B8BEA9A54496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3570033E-D451-417F-99AA-B8BEA9A54496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FD4382-C968-44C1-A305-E9A2349A4A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FD4382-C968-44C1-A305-E9A2349A4A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FD4382-C968-44C1-A305-E9A2349A4A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FD4382-C968-44C1-A305-E9A2349A4A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99658727-2A4D-4278-A774-EFDFF8137E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99658727-2A4D-4278-A774-EFDFF8137E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99658727-2A4D-4278-A774-EFDFF8137E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99658727-2A4D-4278-A774-EFDFF8137E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿@model MagenicManila.Brownbag.UI.Web.Models.PersonModel
+
+@{
+	 ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm())
+{
+	<fieldset>
+		<legend>Edit</legend>
+		<div class="editor">
+			@Html.LabelFor(model => model.ModelObject.FirstName)
+			@Html.EditorFor(model => model.ModelObject.FirstName)
+			@Html.ValidationMessageFor(model => model.ModelObject.FirstName)
+		</div>
+		<div class="editor">
+			@Html.LabelFor(model => model.ModelObject.MiddleName)
+			@Html.EditorFor(model => model.ModelObject.MiddleName)
+			@Html.ValidationMessageFor(model => model.ModelObject.MiddleName)
+		</div>
+		<div class="editor">
+			@Html.LabelFor(model => model.ModelObject.LastName)
+			@Html.EditorFor(model => model.ModelObject.LastName)
+			@Html.ValidationMessageFor(model => model.ModelObject.LastName)
+		</div>
+		<div class="editor">
+			@Html.LabelFor(model => model.ModelObject.Gender)
+			@Html.EditorFor(model => model.ModelObject.Gender)
+			@Html.ValidationMessageFor(model => model.ModelObject.Gender)
+		</div>
+	</fieldset>
+	<input type="submit" value="Save" />
+}

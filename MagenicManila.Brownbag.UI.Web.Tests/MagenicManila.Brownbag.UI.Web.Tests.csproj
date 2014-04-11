@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74FD4382-C968-44C1-A305-E9A2349A4A4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagenicManila.Brownbag.UI.Web.Tests</RootNamespace>
+    <AssemblyName>MagenicManila.Brownbag.UI.Web.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.1.5\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Csla">
+      <HintPath>..\packages\CSLA-Core.4.5.40\lib\net45\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Csla.Web">
+      <HintPath>..\packages\CSLA-ASP.NET.4.5.40\lib\net45\Csla.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Csla.Web.Mvc4">
+      <HintPath>..\packages\CSLA-ASP.NET-MVC4.4.5.40\lib\net45\Csla.Web.Mvc4.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.1.1309.1617\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Spackle">
+      <HintPath>..\packages\Spackle.7.1.0.0\lib\NET4.0\Spackle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Controllers\PeopleControllerTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MagenicManila.Brownbag.BusinessObjects\MagenicManila.Brownbag.BusinessObjects.csproj">
+      <Project>{4b62c49f-283f-41a6-9116-f9fe732c77b7}</Project>
+      <Name>MagenicManila.Brownbag.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagenicManila.Brownbag.Core\MagenicManila.Brownbag.Core.csproj">
+      <Project>{7f83e40b-94ff-4d85-b19a-80b06996ca9c}</Project>
+      <Name>MagenicManila.Brownbag.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagenicManila.Brownbag.UI.Web\MagenicManila.Brownbag.UI.Web.csproj">
+      <Project>{2123e3c5-c8cf-4c5b-ab57-54f2a0000d0c}</Project>
+      <Name>MagenicManila.Brownbag.UI.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery-1.8.2.intellisense.js">
+      <Link>Scripts\jquery-1.8.2.intellisense.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery-1.8.2.js">
+      <Link>Scripts\jquery-1.8.2.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery-1.8.2.min.js">
+      <Link>Scripts\jquery-1.8.2.min.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery-ui-1.8.24.js">
+      <Link>Scripts\jquery-ui-1.8.24.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery-ui-1.8.24.min.js">
+      <Link>Scripts\jquery-ui-1.8.24.min.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.unobtrusive-ajax.js">
+      <Link>Scripts\jquery.unobtrusive-ajax.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.unobtrusive-ajax.min.js">
+      <Link>Scripts\jquery.unobtrusive-ajax.min.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.validate-vsdoc.js">
+      <Link>Scripts\jquery.validate-vsdoc.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.validate.js">
+      <Link>Scripts\jquery.validate.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.validate.min.js">
+      <Link>Scripts\jquery.validate.min.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.validate.unobtrusive.js">
+      <Link>Scripts\jquery.validate.unobtrusive.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\jquery.validate.unobtrusive.min.js">
+      <Link>Scripts\jquery.validate.unobtrusive.min.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\knockout-2.2.0.debug.js">
+      <Link>Scripts\knockout-2.2.0.debug.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\knockout-2.2.0.js">
+      <Link>Scripts\knockout-2.2.0.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\modernizr-2.6.2.js">
+      <Link>Scripts\modernizr-2.6.2.js</Link>
+    </Content>
+    <Content Include="..\MagenicManila.Brownbag.UI.Web\Scripts\_references.js">
+      <Link>Scripts\_references.js</Link>
+    </Content>
+    <Content Include="Content\qunit.css" />
+    <Content Include="Scripts\qunit.js" />
+    <Content Include="Scripts\Views\Ssample.Tests.js" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

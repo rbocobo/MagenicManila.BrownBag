@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B62C49F-283F-41A6-9116-F9FE732C77B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagenicManila.Brownbag.BusinessObjects</RootNamespace>
+    <AssemblyName>MagenicManila.Brownbag.BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.1.5\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Csla, Version=4.5.40.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CSLA-Core.4.5.40\lib\net45\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Spackle">
+      <HintPath>..\packages\Spackle.7.1.0.0\lib\NET4.0\Spackle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\CacheableAttribute.cs" />
+    <Compile Include="Attributes\ExcludeFromObjectFactoryAttribute.cs" />
+    <Compile Include="BusinessObjectsContainerBuilderComposition.cs" />
+    <Compile Include="Contracts\IPerson.cs" />
+    <Compile Include="Contracts\IPersonCollectionView.cs" />
+    <Compile Include="Contracts\IPersonView.cs" />
+    <Compile Include="Contracts\IProduct.cs" />
+    <Compile Include="Core\BusinessBaseCore.cs" />
+    <Compile Include="Core\ChildCommand.cs" />
+    <Compile Include="Core\CommandBaseCore.cs" />
+    <Compile Include="Core\Contracts\IBusinessBaseCore.cs" />
+    <Compile Include="Core\Contracts\IBusinessListBaseCoreCollection.cs" />
+    <Compile Include="Core\Contracts\ICommandBaseCore.cs" />
+    <Compile Include="Core\Contracts\IObjectFactory.cs" />
+    <Compile Include="Core\Contracts\IReadOnlyBaseCore.cs" />
+    <Compile Include="Core\Contracts\IReadOnlyListBaseCoreCollection.cs" />
+    <Compile Include="Core\ObjectFactory.cs" />
+    <Compile Include="Core\ReadOnlyBaseCore.cs" />
+    <Compile Include="Core\ReadOnlyListBaseCoreCollection.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="ObjectActivator.cs" />
+    <Compile Include="ObjectInterceptor.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="PersonCollectionView.cs" />
+    <Compile Include="PersonView.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Diagrams\ClassDiagram.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MagenicManila.Brownbag.Core\MagenicManila.Brownbag.Core.csproj">
+      <Project>{7f83e40b-94ff-4d85-b19a-80b06996ca9c}</Project>
+      <Name>MagenicManila.Brownbag.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagenicManila.Brownbag.Data\MagenicManila.Brownbag.Data.csproj">
+      <Project>{ee275e4a-cdac-408d-8682-53f19daa73ff}</Project>
+      <Name>MagenicManila.Brownbag.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
